@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display:flex;
+    height: 100vh;
+    width: 100vw;
+}
+.part1{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/27091195/pexels-photo-27091195/free-photo-of-woman-in-dress-standing-with-bag-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+.part2{
+    width: 50%;
+        height: 100%;
+        background-image: url(https://images.pexels.com/photos/23813283/pexels-photo-23813283/free-photo-of-a-woman-riding-bicycle-on-the-street-with-bare-trees-in-the-background-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+}
+.wrapper{
+    width: 60%;
+    margin: auto;
+    margin-top: 45px;
+    background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: rgba(250, 235, 215, 0.468);
+    padding: 15px;
+}
+.inputwrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.swapbtn{
+    margin: auto;
+    background: rgba(1, 1, 21, 0.459);
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin-left: 40%;
+    margin-top: -8px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+.swapbtn:hover{
+    background-color: white;
+    color: black;
+}
+.Second{
+    display: flex;
+        flex-direction: column;
+        gap: 25px;
+        background-color: rgba(250, 235, 215, 0.468);
+        padding: 15px;
+        margin-top: -8px;
+    
+}
+label{
+    font-size: 22px;
+    font-weight: 500;
+}
+input{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+
+}
+select{
+    background-color:transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+.convertbtn{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.292);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+.convertbtn:hover{
+    background-color: white;
+    color: black;
+}
+.convertbtn:active{
+    transform: scale(.8);
+}
+.swapbtn:active{
+    transform: scale(.8);
+}
+@media only screen and (max-width:1447px) {
+    .part2{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:1088px) {
+    .part1 {
+        width: 0%;
+    }
+}
+@media only screen and (max-width:703px) {
+    input {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:435px) {
+    .inputwrapper {
+            flex-direction: column;
+            
+        }
+        .swapbtn{
+            margin-left: 50px;
+        }
+}
+@media only screen and (max-width:395px) {
+    input {
+        width: 100%;
+
+    }
+
+    .swapbtn {
+        margin-left: 30px;
+    }
+}
+@media only screen and (max-width:331px) {
+    input {
+        width: 100%;
+
+    }
+
+    .swapbtn {
+        margin-left: 25px;
+    }
+}
